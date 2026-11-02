@@ -1,9 +1,11 @@
 services:
   - type: web
-    name: metube-ytdlp
+    name: beautiful-ytdlp
     runtime: docker
     repo: https://github.com
     plan: free
     envVars:
-      - key: OUTPUT_DIR
-        value: /downloads
+      - key: CONVERT_STREAM
+        value: "true"
+      - key: REMUX_TO_MP4
+        value: "true"
