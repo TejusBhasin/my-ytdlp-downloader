@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: metube-ytdlp
+    runtime: docker
+    repo: https://github.com
+    plan: free
+    envVars:
+      - key: OUTPUT_DIR
+        value: /downloads
